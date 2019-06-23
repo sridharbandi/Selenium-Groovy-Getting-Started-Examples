@@ -1,6 +1,5 @@
 package com.tech.selenium.pageobjects
 
-import org.junit.Assert
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.support.FindBy
@@ -21,7 +20,7 @@ class SearchResultsPage {
         PageFactory.initElements(driver, this)
     }
 
-    def assertSeleniumPresent(){
-        Assert.assertTrue(lnkSelenium.isDisplayed())
+    def seleniumPresent(){
+        return lnkSelenium.isDisplayed()
     }
 }

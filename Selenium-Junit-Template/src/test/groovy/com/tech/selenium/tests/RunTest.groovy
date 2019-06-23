@@ -4,6 +4,7 @@ import com.tech.selenium.driverutil.DriverFactory
 import com.tech.selenium.pageobjects.GoogleSearchPage
 import com.tech.selenium.pageobjects.SearchResultsPage
 import org.junit.After
+import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
 import org.openqa.selenium.WebDriver
@@ -25,10 +26,10 @@ class RunTest{
     }
 
     @Test
-    void GoogleSearchPage() {
+    void testGoogleSearch() {
         googleSearchPage.openURL()
         googleSearchPage.searchFor("Selenium")
-        searchResultsPage.assertSeleniumPresent()
+        Assert.assertTrue(searchResultsPage.seleniumPresent())
     }
 
     @After
