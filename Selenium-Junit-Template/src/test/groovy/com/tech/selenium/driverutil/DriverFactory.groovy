@@ -9,6 +9,9 @@ import org.openqa.selenium.opera.OperaDriver
 
 import java.util.concurrent.TimeUnit
 
+/**
+ * Created by Sridhar Bandi on 23/06/19.
+ */
 class DriverFactory {
 
     def static getDriver() {

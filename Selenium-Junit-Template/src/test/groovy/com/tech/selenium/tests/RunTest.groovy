@@ -8,6 +8,9 @@ import org.junit.Before
 import org.junit.Test
 import org.openqa.selenium.WebDriver
 
+/**
+ * Created by Sridhar Bandi on 23/06/19.
+ */
 class RunTest{
 
     WebDriver browser
