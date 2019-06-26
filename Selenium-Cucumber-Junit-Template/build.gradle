@@ -13,6 +13,7 @@ ext {
     webdrivermanagerVersion = '3.2.0'
     seleniumVersion = '3.141.59'
     cucumberversion = '4.2.2'
+    cucumberGroovy = '4.4.0'
     groovyVersion = '2.3.11'
 }
 
@@ -20,7 +21,7 @@ dependencies {
     compile "org.codehaus.groovy:groovy-all:$groovyVersion"
     compile "org.seleniumhq.selenium:selenium-java:$seleniumVersion"
     compile "io.github.bonigarcia:webdrivermanager:$webdrivermanagerVersion"
-    testCompile "io.cucumber:cucumber-java8:${cucumberversion}"
+    testCompile "io.cucumber:cucumber-groovy:${cucumberGroovy}"
     testCompile "io.cucumber:cucumber-junit:${cucumberversion}"
 }
 
