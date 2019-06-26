@@ -5,3 +5,7 @@
 /Selenium-Testng-Template/.gradle/
 /Selenium-Testng-Template/build/
 /Selenium-Testng-Template/target/
+/Selenium-Cucumber-Junit-Template/.gradle/
+/Selenium-Cucumber-Junit-Template/target/
+/Selenium-Cucumber-Junit-Template/build/
+/Selenium-Cucumber-Junit-Template/out/
