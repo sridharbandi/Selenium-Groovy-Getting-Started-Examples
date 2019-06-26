@@ -12,7 +12,7 @@ repositories {
 ext {
     webdrivermanagerVersion = '3.2.0'
     seleniumVersion = '3.141.59'
-    cucumberversion = '4.2.2'
+    cucumberversion = '4.4.0'
     cucumberGroovy = '4.4.0'
     groovyVersion = '2.3.11'
 }
