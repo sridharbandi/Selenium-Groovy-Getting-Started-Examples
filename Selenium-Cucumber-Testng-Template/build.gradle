@@ -8,14 +8,24 @@ version '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 }
+ext {
+    webdrivermanagerVersion = '3.2.0'
+    seleniumVersion = '3.141.59'
+    cucumberversion = '4.4.0'
+    groovyVersion = '2.3.11'
+}
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    compile "org.codehaus.groovy:groovy-all:$groovyVersion"
+    compile "org.seleniumhq.selenium:selenium-java:$seleniumVersion"
+    compile "io.github.bonigarcia:webdrivermanager:$webdrivermanagerVersion"
+    testCompile "io.cucumber:cucumber-groovy:${cucumberversion}"
+    testCompile "io.cucumber:cucumber-testng:${cucumberversion}"
 }
 
-compileKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+test {
+    systemProperties System.properties
+    dependsOn 'cleanTest'
 }
-compileTestKotlin {
-    kotlinOptions.jvmTarget = "1.8"
-}
+
+gradle.startParameter.continueOnFailure = true
