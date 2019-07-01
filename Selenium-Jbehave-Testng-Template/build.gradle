@@ -9,7 +9,27 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.3.11'
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+ext {
+    webdrivermanagerVersion = '3.2.0'
+    seleniumVersion = '3.141.59'
+    jbehaveVersion = '4.5.1'
+    testngversion = '6.14.3'
+    groovyVersion = '2.3.11'
 }
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:$groovyVersion"
+    compile "org.seleniumhq.selenium:selenium-java:$seleniumVersion"
+    compile "io.github.bonigarcia:webdrivermanager:$webdrivermanagerVersion"
+    testCompile "org.jbehave:jbehave-groovy:${jbehaveVersion}"
+    compile "org.jbehave:jbehave-core:${jbehaveVersion}"
+    testCompile "org.testng:testng:${testngversion}"
+}
+
+test {
+    systemProperties System.properties
+    dependsOn 'cleanTest'
+}
+
+gradle.startParameter.continueOnFailure = true
