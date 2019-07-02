@@ -1,12 +1,9 @@
-plugins {
-    id 'groovy'
-}
-
 group 'com.tech.selenium'
 version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 ext {
@@ -29,8 +26,9 @@ buildscript {
     }
 }
 
-apply plugin: "java"
+apply plugin: "groovy"
 apply plugin: "net.serenity-bdd.aggregator"
+
 
 dependencies {
     compile "org.codehaus.groovy:groovy-all:$groovyVersion"
