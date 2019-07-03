@@ -1,15 +1,51 @@
-plugins {
-    id 'groovy'
-}
-
 group 'com.tech.selenium'
 version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
-dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.3.11'
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+ext {
+    webdrivermanagerVersion = '3.2.0'
+    serenityVersion = "2.0.39"
+    serenityCucumberVersion = "1.9.37"
+    junitVersion = '4.12'
+    groovyVersion = '2.3.11'
 }
+
+buildscript {
+    ext {
+        serenityVersion = "2.0.39"
+    }
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:${serenityVersion}")
+    }
+}
+
+apply plugin: "groovy"
+apply plugin: "net.serenity-bdd.aggregator"
+
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:$groovyVersion"
+    compile "net.serenity-bdd:serenity-core:${serenityVersion}"
+    compile "net.serenity-bdd:serenity-cucumber:${serenityCucumberVersion}"
+    compile "io.github.bonigarcia:webdrivermanager:$webdrivermanagerVersion"
+    testCompile "junit:junit:$junitVersion"
+}
+
+test {
+    testLogging {
+        showStandardStreams = true
+    }
+    /* Pass all system properties: */
+    systemProperties System.getProperties()
+    dependsOn 'cleanTest'
+}
+
+gradle.startParameter.continueOnFailure = true
