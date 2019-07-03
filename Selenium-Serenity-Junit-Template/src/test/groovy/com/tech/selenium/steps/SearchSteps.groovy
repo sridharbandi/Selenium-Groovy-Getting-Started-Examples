@@ -5,6 +5,9 @@ import com.tech.selenium.pageobjects.SearchResultsPage
 import net.thucydides.core.annotations.Step
 import net.thucydides.core.steps.ScenarioSteps
 
+/**
+ * Created by Sridhar Bandi on 02/07/19.
+ */
 class SearchSteps extends ScenarioSteps {
 
     GoogleSearchPage googleSearchPage;

@@ -9,6 +9,9 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.openqa.selenium.WebDriver
 
+/**
+ * Created by Sridhar Bandi on 02/07/19.
+ */
 @RunWith(SerenityRunner.class)
 class RunTest {
 
