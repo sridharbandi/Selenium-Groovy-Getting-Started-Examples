@@ -26,3 +26,5 @@
 /Selenium-Serenity-Cucumber-Template/.gradle/
 /Selenium-Selenide-Junit-Template/.gradle/
 /Selenium-Selenide-Junit-Template/out/
+/Selenium-Selenide-Junit-Template/target/
+/Selenium-Selenide-Junit-Template/build/
