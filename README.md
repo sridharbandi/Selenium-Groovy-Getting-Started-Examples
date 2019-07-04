@@ -8,8 +8,8 @@
   4. [Selenium Cucumber TestNG Template](https://github.com/sridharbandi/Selenium-Groovy-Getting-Started-Examples/tree/master/Selenium-Cucumber-Testng-Template)
   5. [Selenium Jbehave Junit Template](https://github.com/sridharbandi/Selenium-Groovy-Getting-Started-Examples/tree/master/Selenium-Jbehave-Junit-Template)
   6. [Selenium Jbehave TestNG Template](https://github.com/sridharbandi/Selenium-Groovy-Getting-Started-Examples/tree/master/Selenium-Jbehave-Testng-Template)
-  6. [Selenium Serenity Junit Template](https://github.com/sridharbandi/Selenium-Groovy-Getting-Started-Examples/tree/master/Selenium-Serenity-Junit-Template)
-  7. [Selenium Selenide Junit Template](https://github.com/sridharbandi/Selenium-Groovy-Getting-Started-Examples/tree/master/Selenium-Selenide-Junit-Template)
+  7. [Selenium Serenity Junit Template](https://github.com/sridharbandi/Selenium-Groovy-Getting-Started-Examples/tree/master/Selenium-Serenity-Junit-Template)
+  8. [Selenium Selenide Junit Template](https://github.com/sridharbandi/Selenium-Groovy-Getting-Started-Examples/tree/master/Selenium-Selenide-Junit-Template)
  
  > If you looking for template which is not in above list, drop me [mail](mailto:sridhar.bandi.ece@gmail.com). I can create it for you.
  
