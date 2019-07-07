@@ -22,6 +22,11 @@ dependencies {
 }
 
 test {
+    useTestNG(){
+        useDefaultListeners = true
+        //To execute with testng xml uncomment below lin
+        //suites 'src/test/resources/testng.xml'
+    }
     systemProperties System.properties
     dependsOn 'cleanTest'
 }
