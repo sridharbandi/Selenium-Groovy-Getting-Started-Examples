@@ -23,6 +23,9 @@ dependencies {
 }
 
 test {
+    useTestNG(){
+        useDefaultListeners = true
+    }
     systemProperties System.properties
     dependsOn 'cleanTest'
 }
