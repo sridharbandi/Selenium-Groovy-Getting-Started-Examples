@@ -20,7 +20,7 @@ import org.testng.annotations.Test
 class TestRunner extends JUnitStories {
 
     @Override
-     Embedder configuredEmbedder() {
+    Embedder configuredEmbedder() {
         final Embedder embedder = new Embedder();
         embedder.embedderControls()
                 .useThreads(1)
@@ -38,7 +38,7 @@ class TestRunner extends JUnitStories {
     }
 
     @Override
-     Configuration configuration() {
+    Configuration configuration() {
         return new MostUsefulConfiguration()
                 .useStoryLoader(
                 new LoadFromClasspath(this.getClass())
@@ -63,7 +63,7 @@ class TestRunner extends JUnitStories {
     }
 
     @Override
-     InjectableStepsFactory stepsFactory() {
+    InjectableStepsFactory stepsFactory() {
         return new InstanceStepsFactory(configuration(), new GoogleSteps());
     }
 
