@@ -9,7 +9,23 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.3.11'
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+ext {
+    selenideVersion = '5.2.3'
+    jbehaveVersion = '4.3.5'
+    groovyVersion = '2.3.11'
+    testngversion = '6.14.3'
 }
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:$groovyVersion"
+    compile "com.codeborne:selenide:${selenideVersion}"
+    compile "org.jbehave:jbehave-core:${jbehaveVersion}"
+    testCompile "org.testng:testng:${testngversion}"
+}
+
+test {
+    systemProperties System.properties
+    dependsOn 'cleanTest'
+}
+
+gradle.startParameter.continueOnFailure = true
