@@ -47,3 +47,6 @@
 /Selenium-Selenide-Jbehave-Testng-Template/.gradle/
 /Selenium-Selenide-Jbehave-Testng-Template/target/
 /Selenium-Selenide-Jbehave-Testng-Template/out/
+/Selenium-Fluentlenium-Junit-Template/.gradle/
+/Selenium-Fluentlenium-Junit-Template/target/
+/Selenium-Fluentlenium-Junit-Template/out/
