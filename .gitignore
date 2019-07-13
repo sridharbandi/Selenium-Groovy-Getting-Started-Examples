@@ -50,3 +50,6 @@
 /Selenium-Fluentlenium-Junit-Template/.gradle/
 /Selenium-Fluentlenium-Junit-Template/target/
 /Selenium-Fluentlenium-Junit-Template/out/
+/Selenium-Fluentlenium-Testng-Template/.gradle/
+/Selenium-Fluentlenium-Testng-Template/out/
+/Selenium-Fluentlenium-Testng-Template/build/
