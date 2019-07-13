@@ -15,6 +15,9 @@ ext {
     seleniumVersion = '3.141.59'
     groovyVersion = '2.3.11'
     testngVersion = '7.0.0-beta3'
+    guiceVersion = '4.2.2'
+    guavaVersion = '28.0-jre'
+
 }
 
 dependencies {
@@ -27,9 +30,14 @@ dependencies {
     compile "org.seleniumhq.selenium:selenium-edge-driver:${seleniumVersion}"
     compile "org.seleniumhq.selenium:selenium-opera-driver:${seleniumVersion}"
     testCompile "org.testng:testng:${testngVersion}"
+    compile "com.google.inject:guice:${guiceVersion}"
+    compile "com.google.guava:guava:${guavaVersion}"
 }
 
 test {
+    useTestNG(){
+        useDefaultListeners = true
+    }
     systemProperties System.properties
     dependsOn 'cleanTest'
 }
