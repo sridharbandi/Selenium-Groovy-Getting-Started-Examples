@@ -8,10 +8,11 @@ repositories {
 
 ext {
     webdrivermanagerVersion = '3.2.0'
-    serenityVersion = "2.0.39"
-    serenityCucumberVersion = "1.9.37"
+    serenityVersion = "2.0.56"
+    serenityCucumberVersion = "1.9.40"
     junitVersion = '4.12'
     groovyVersion = '2.3.11'
+    cucumberversion = '4.4.0'
 }
 
 buildscript {
@@ -36,6 +37,7 @@ dependencies {
     compile "net.serenity-bdd:serenity-core:${serenityVersion}"
     compile "net.serenity-bdd:serenity-cucumber:${serenityCucumberVersion}"
     compile "io.github.bonigarcia:webdrivermanager:$webdrivermanagerVersion"
+    testCompile "io.cucumber:cucumber-groovy:${cucumberversion}"
     testCompile "junit:junit:$junitVersion"
 }
 
