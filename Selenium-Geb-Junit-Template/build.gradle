@@ -1,0 +1,33 @@
+plugins {
+    id 'groovy'
+}
+
+group 'com.tech.selenium'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    webdrivermanagerVersion = '3.2.0'
+    seleniumVersion = '3.141.59'
+    groovyVersion = '2.3.11'
+    gebVersion = '3.0.1'
+}
+
+dependencies {
+    compile "org.gebish:geb-spock:$gebVersion"
+    compile "org.codehaus.groovy:groovy-all:$groovyVersion"
+    compile "org.seleniumhq.selenium:selenium-java:$seleniumVersion"
+    compile "io.github.bonigarcia:webdrivermanager:$webdrivermanagerVersion"
+    testCompile "org.gebish:geb-junit4:$gebVersion"
+
+}
+
+test {
+    systemProperties System.properties
+    dependsOn 'cleanTest'
+}
+
+gradle.startParameter.continueOnFailure = true
