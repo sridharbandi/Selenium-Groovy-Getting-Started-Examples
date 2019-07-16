@@ -54,3 +54,7 @@
 /Selenium-Fluentlenium-Testng-Template/out/
 /Selenium-Fluentlenium-Testng-Template/build/
 /Selenium-Fluentlenium-Testng-Template/target/
+/Selenium-Fluentlenium-Cucumber-Template/.gradle/
+/Selenium-Geb-Junit-Template/.gradle/
+/Selenium-Geb-Junit-Template/target/
+/Selenium-Geb-Junit-Template/out/
