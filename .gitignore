@@ -61,3 +61,5 @@
 /Selenium-Geb-Testng-Template/.gradle/
 /Selenium-Geb-Testng-Template/out/
 /Selenium-Geb-Testng-Template/target/
+/Selenium-Geb-Spec-Template/.gradle/
+/Selenium-Geb-Spec-Template/build/
