@@ -58,3 +58,6 @@
 /Selenium-Geb-Junit-Template/.gradle/
 /Selenium-Geb-Junit-Template/target/
 /Selenium-Geb-Junit-Template/out/
+/Selenium-Geb-Testng-Template/.gradle/
+/Selenium-Geb-Testng-Template/out/
+/Selenium-Geb-Testng-Template/target/
