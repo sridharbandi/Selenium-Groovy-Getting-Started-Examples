@@ -19,6 +19,7 @@
  14. [Selenium FluentLenium TestNG Template](https://github.com/sridharbandi/Selenium-Groovy-Getting-Started-Examples/tree/master/Selenium-Selenide-FluentLenium-Testng-Template)
  15. [Selenium Geb Junit Template](https://github.com/sridharbandi/Selenium-Groovy-Getting-Started-Examples/tree/master/Selenium-Geb-Junit-Template)
  16. [Selenium Geb TestNG Template](https://github.com/sridharbandi/Selenium-Groovy-Getting-Started-Examples/tree/master/Selenium-Geb-Testng-Template)
+ 17. [Selenium Geb Spec Template](https://github.com/sridharbandi/Selenium-Groovy-Getting-Started-Examples/tree/master/Selenium-Geb-Spec-Template)
  
  > If you looking for template which is not in above list, drop me [mail](mailto:sridhar.bandi.ece@gmail.com). I can create it for you.
  
